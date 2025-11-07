@@ -1,0 +1,90 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long int
+#define ld long double
+#define vll vector<ll> 
+#define vvll vector<vector<ll>>
+#define vpll vector<pair<ll, ll>>
+#define loop(i, n) for(ll i=0; i<(n); i++)
+#define loop_from(i, j, n) for(ll i=(j); i<(n); i++)
+#define vec_input(i, n, v) for(ll i=0; i<(n); i++) { cin>>v[i]; }
+#define srt(x) sort((x).begin(), (x).end());
+#define srtcmp(x, y) sort((x).begin(), (x).end(), (y));
+#define trace(x) for(auto it:x) cout<<it<<' '; cout<<"\n";
+#define cy cout<<"YES"<<"\n";
+#define cn cout<<"NO"<<"\n";
+#define nl cout<<"\n";
+#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+
+/*-----------------------------Modular Arithmetic---------------------*/
+inline ll add(ll x,ll y,ll mod){x+=y; if(x>=mod) return x-mod; return x;}
+inline ll sub(ll x,ll y,ll mod){x-=y; if(x<0) return x+mod; return x;}
+inline ll mul(ll x,ll y,ll mod){return (x*1ll*y)%mod;}
+inline ll power(ll x,ll y,ll mod){ll ans=1; while(y){if(y&1) ans=mul(ans,x,mod); x=mul(x,x,mod); y>>=1;} return ans;}
+inline ll modInv(ll x,ll mod){return power(x,mod-2,mod);}
+
+
+
+ll gcd(ll a, ll b){return __gcd(a, b);}
+ll lcm(ll a , ll b){return (a*b)/__gcd(a,b);}
+
+ll fastPower(ll x, ll y, ll m)
+{
+    ll res = 1;
+    x = x%m;
+    if (x == 0) return 0;
+    while (y > 0)
+    {
+        if (y & 1)
+            res = (res*x)%m;
+        y = y>>1;
+        x = (x*x)%m;
+    }
+    return res;
+}
+
+ll factMod(ll n, ll m) {
+    ll res=1;
+    for(ll i=1; i<=n; i++)
+    {
+        res*=i;
+        res%=m;
+    }
+    return res;
+}
+
+
+bool sortbysec(const pair<int,int> &a, const pair<int,int> &b)
+{
+    return (a.second < b.second);
+}
+
+/* ..................................................................................... */
+
+void solve()
+{
+    
+}
+
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
+    fastio;
+
+
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        solve();
+    }
+        
+
+    return 0;
+}
