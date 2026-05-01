@@ -1,5 +1,5 @@
 {
-	"cpp snipper": {
+	"cpp snippet": {
 		"prefix": "cpp",
 		"scope": "cpp",
 		"body": [
@@ -103,6 +103,6 @@
 			"    return 0;",
 			"}"
 		],
-		"description": "cpp snipper"
+		"description": "cpp snippet"
 	}
 }
